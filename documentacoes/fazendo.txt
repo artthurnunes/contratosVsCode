@@ -1,0 +1,7 @@
+* Configurar GIT
+* Criar a layout página principal.
+* Estudar sobre SESSION para fazer na página.
+
+
+   --------------------- PAREI ------------------
+   * Fazer o UPDATE da senha na classeLogin.js

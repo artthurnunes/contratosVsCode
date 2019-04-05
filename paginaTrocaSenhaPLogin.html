@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sistema de contratos HES</title>
+	<!--<link rel="shortcut icon" href="img/comprimido.png"> ADICIONAR ICONE NA ABA DO NAVEGADOR-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<!-- Não armazena cache -->
+	<meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate, Post-Check=0, Pre-Check=0"> 
+	<meta HTTP-EQUIV="Pragma" CONTENT="no-cache"> 
+	<meta HTTP-EQUIV="Expires" CONTENT="-1">
+		
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/style.css" rel="stylesheet" type="text/css"/>
+    
+    <script type="text/javascript" language="javascript">
+    
+        function construtorPagina(){ //funcao para criar objetos, carregada junto com a pagina.
+            metodosLogin = new funcoesJsLogin(); //variavel sem o VAR para ficar publica na pagina
+        } 
+
+        function getUserPass(){
+            var userJS = document.getElementById("user").value;
+            var passAJS = document.getElementById("passA").value;
+            var passNJS = document.getElementById("passN").value;
+            var passN1JS = document.getElementById("passN1").value;
+            metodosLogin.alterandoNovaSenha(userJS,passAJS,passNJS,passN1JS);
+        }
+        
+    </script> 
+	
+  </head>
+  <body onload="construtorPagina()">
+      <div class="container">
+          <div class="row" id="">
+            <div class="col-md-6 col-md-offset-7" id="">
+                <br>
+                <center><h2><em>Tela de alteração de senha</em></h2></center>
+                <br><br><br>
+            </div>
+          </div>
+          <div class="row" id="">
+              <div class="col-md-6 col-md-offset-3" id="">
+                  <center><img src="imagens/logo.png"></center>
+              </div>
+          </div>
+          <div class="row" id="">
+              <div class="col-md-6 col-md-offset-3" id="">
+                  <center><h3>Sistema de controle de contratos HES</h3></center>
+              </div>
+          </div>
+          <div class="row" id="">
+              <div class="col-md-4 col-md-offset-4" id="">
+                <input type="text" id="user" class="form-control" placeholder="Digite seu usuário de acesso" required autofocus>
+              </div>
+          </div>
+          <!--<form method="" action="paginaPrincipal.php">-->
+          <div class="row" id="">
+              <div class="col-md-4 col-md-offset-4" id="">
+                <input type="password" id="passA" class="form-control" placeholder="Digite sua senha atual" required autofocus>
+              </div>
+          </div>
+          <div class="row" id="">
+                <div class="col-md-4 col-md-offset-4" id="">
+                  <input type="password" id="passN" class="form-control" placeholder="Digite sua nova senha" required autofocus>
+                </div>
+          </div>
+          <div class="row" id="">
+                <div class="col-md-4 col-md-offset-4" id="">
+                  <input type="password" id="passN1" class="form-control" placeholder="Confirme a nova senha" required autofocus>
+                </div>
+          </div>
+          <div class="row" id="">
+              <div class="col-md-4 col-md-offset-4" id="">
+                <br>  
+                <button class="btn btn-lg btn-primary btn-block" type="button"
+                        onclick="getUserPass()">Alterar</button>
+              </div>
+          </div> 
+          <a href="index.html">Voltar</a> 
+
+      </div><!--div do container da página -->
+      
+      
+    <script src="bootstrap/js/vendor/bootstrap.min.js"></script>
+    <script src="bootstrap/js/main.js"></script>
+    <script src="classesJS/classeLogin.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+  </body>
+</html>

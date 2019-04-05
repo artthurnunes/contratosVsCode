@@ -1,0 +1,5 @@
+* Verificar depois de logar quando é clicado no botão voltar do browser, está voltando para a estrutura de 
+    pastas do server.
+* Verificar como fica melhor o reset de senha, próprio usuário ou igual MV feita por alguém.
+* Fazer o insert do usuario tudo maiusculo
+
