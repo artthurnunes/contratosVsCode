@@ -4,4 +4,4 @@
 
 
    --------------------- PAREI ------------------
-   * Fazer o UPDATE da senha na classeLogin.js
+   
