@@ -1,4 +1,3 @@
-* Configurar GIT
 * Criar a layout página principal.
 * Estudar sobre SESSION para fazer na página.
 

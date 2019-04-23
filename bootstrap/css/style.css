@@ -8,3 +8,16 @@
 	border: 1px solid red;
 }
 
+#backgroud-azul-botoes {
+	background: Snow;
+}
+  
+#footer-login {
+	/*background-color: #f5f5f5;*/
+	background: lightgreen;
+	position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+
